@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-i$zcd4(au3r0w*gwsam5hxc)po_r+_z$$7pfd0*5kartujc094
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['music-g.herokuapp.com', '127.0.0.1:8000', 'localhost',"127.0.0.1"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR ,'db.sqlite3')
     }
 }
 
