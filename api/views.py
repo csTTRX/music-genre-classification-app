@@ -11,8 +11,8 @@ from pydub import AudioSegment
 import os
 import pandas as pd
 
-model_path = os.path.join(settings.BASE_DIR ,'nootebooks/best_svm_model.sav')
-scaller_path = os.path.join(settings.BASE_DIR ,'nootebooks/scaller.sav')
+model_path = os.path.join(settings.BASE_DIR ,'notebooks/best_svm_model.sav')
+scaller_path = os.path.join(settings.BASE_DIR ,'notebooks/scaller.sav')
 model = pickle.load(open(model_path, 'rb'))
 scaller = pickle.load(open(scaller_path, 'rb'))
 genre = ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz','metal', 'pop', 'reggae', 'rock']

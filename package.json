@@ -20,12 +20,17 @@
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
   },
+  "engines": {
+    "node": "14.19.1",
+    "npm": "8.5.5"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
+
   "browserslist": {
     "production": [
       ">0.2%",
