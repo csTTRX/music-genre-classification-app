@@ -1,0 +1,9 @@
+*.psd
+*.pdf
+*.jpg
+*.jpeg
+*.mp3
+*.mp4
+*.wav
+/test
+/api/test
